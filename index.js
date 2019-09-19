@@ -164,8 +164,8 @@ module.exports.last = last;
  * 
  * @param{An Array} array: The array to be searched through for the value.
  * @param{A Value} value: The value to find the index of inside of the array.
- * @return(A Number) x or i: The first index you can find the value at inside of 
- * the array if -1 the value was never found in the provided array.
+ * @return(A Number) The first index you can find the value at inside of 
+ * the array if -1 is returned the value was never found in the provided array.
  * 
  * 
  */
@@ -199,7 +199,7 @@ module.exports.indexOf = indexOf;
  * 
  * @param {An Array} array: The array to search for value.
  * @param {A Value} value: The value to be searched for.
- * @return{A Boolean} (exists > 0 ? true: false): The boolean true if value was 
+ * @return{A Boolean}  The boolean true will be returned if value was 
  * found in an array, false otherwise.
  */
  
@@ -351,7 +351,7 @@ module.exports.partition = partition;
  * @param {An Array or Object} collection: The collection to be acted upon.
  * @param {A Function} action: The function that will interact in some way 
  * with given <collection>.
- * @return {An Array} nA: New array assigned to the return value of <action>
+ * @return {An Array} New array assigned to the return value of <action>
  */
 
 function map(collection, action) {
@@ -384,8 +384,7 @@ module.exports.map = map;
  * 
  * @param {An Array} array: The array containing values to be returned.
  * @param {A Property} property: A property/key variable for our array.
- * @return {An Array} _.map(array, a => a[property]);: Returns a new array with 
- * the property values of our given array.
+ * @return {An Array} Returns a new array with the property values of our given array.
  */
     
 //array input is an array of objects
@@ -606,8 +605,7 @@ module.exports.reduce = reduce;
  * @param {Any number of Objects} ...object3: Optional additional objects 
  * passed in as a rest parameter and treated as an array within the code body
  * to be added to the first object. 
- * @return {An Object} object1: Our modified <object1> with additional 
- * properties.
+ * @return {An Object} Our modified <object1> with additional properties.
  */
  
 function extend(object1, object2, ...object3) {
